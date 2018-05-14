@@ -7,19 +7,19 @@ public class ManagerCorredors {
     static Corredor[] corredors = new Corredor[100];
 
     public static Corredor inscriureCorredor(String nom, Equip equip){
-        if(equip == null){
-            return null;
-        }
-
-        for (int i = 0; i < corredors.length; i++) {
-            if(corredors[i] == null){
-                Corredor corredor = new Corredor(nom, equip.id);
-                corredor.id = obtenirUltimIdCorredor() + 1;
-                corredors[i] = corredor;
-
-                return corredor;
-            }
-        }
+//        if(equip == null){
+//            return null;
+//        }
+//
+//        for (int i = 0; i < corredors.length; i++) {
+//            if(corredors[i] == null){
+//                Corredor corredor = new Corredor(nom, equip.id);
+//                corredor.id = obtenirUltimIdCorredor() + 1;
+//                corredors[i] = corredor;
+//
+//                return corredor;
+//            }
+//        }
 
         return null;
     }
